@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tencent_tls_ui_background"
+    tools:context=".HostRegisterActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/tencent_tls_ui_titleBackground">
+
+        <ImageButton
+            android:id="@+id/returnHostLoginActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/tencent_tls_ui_titleBackground"
+            android:src="@drawable/tencent_tls_ui_arrow_left_blue"/>
+
+        <TextView
+            style="@style/tencent_tls_ui_titleFontStyle"
+            android:layout_centerInParent="true"
+            android:text="@string/coat"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tencent_tls_ui_shadowgray"/>
+
+    <LinearLayout
+        android:id="@+id/cursor"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/tencent_tls_ui_titleBackground">
+        <TextView
+            style="@style/tencent_tls_ui_titleFontStyle"
+            android:text="@string/price"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            />
+        <TextView
+            style="@style/tencent_tls_ui_titleFontStyle"
+            android:text="@string/discount"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="35dp"
+            />
+        <TextView
+            style="@style/tencent_tls_ui_titleFontStyle"
+            android:text="@string/logo"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+
+            android:layout_marginTop="5dp"
+            android:paddingLeft="35dp"
+            />
+        <TextView
+            style="@style/tencent_tls_ui_titleFontStyle"
+            android:text="@string/screen"
+            android:textSize="15dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="35dp"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tencent_tls_ui_shadowgray"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_weight="9">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recyclerview"
+            android:divider="#ffff0000"
+            android:dividerHeight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
